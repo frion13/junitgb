@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
-public class Task1Test {
+public class Task1 {
     @Test
     void testEquality() {
         assertEquals(4, 2 + 2);

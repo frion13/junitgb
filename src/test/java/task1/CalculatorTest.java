@@ -63,19 +63,21 @@ class CalculatorTest {
 
     @Test
     @DisplayName("Test discount")
-    void testDiscount(){
+    void testDiscount() {
         double result = calculator.calculateDiscount(100, 5);
-        assertEquals(95, result, "price should be 95");
+        assertEquals(95, result, "The price after applying a 5% discount should be 95");
     }
 
     @Test
     @DisplayName("Test discount zero price")
-    void testZeroPrice(){
+    void testZeroPrice() {
         assertThrows(IllegalArgumentException.class, () -> calculator.calculateDiscount(0, 5), "Цена не должна равняться 0");
     }
+
     @Test
     @DisplayName("Test discount zero percent")
-    void testNegativePerc(){
+    void testNegativePerc() {
         assertThrows(IllegalArgumentException.class, () -> calculator.calculateDiscount(200, -50), "Процент введен неверно");
     }
+}
 
